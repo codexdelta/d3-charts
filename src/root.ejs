@@ -15,13 +15,46 @@
   }
 
   .axis--x path {
-    display: none;
+    /*display: none;*/
   }
 
   /*css for scatter chart*/
-  .circle{
+
+  .circle {
     fill: green;
   }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .xAxis path,
+  .xAxis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .yAxis path,
+  .yAxis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  /*make the brush area transparent*/
+
+  .extent {
+    fill-opacity: 0.09;
+  }
+  .zoomOverlay {
+     pointer-events: all;
+     fill:none;
+ }
+ .band {
+     fill : none;
+     stroke-width: 1px;
+     stroke: red;
+ }
 </style>
 
 <body>
@@ -29,9 +62,9 @@
   <div class="vivaGraph">
 
   </div>
-  <div class="scatterGraph">
+  <!-- <div class="scatterGraph">
 
-  </div>
+  </div> -->
 </body>
 
 </html>
