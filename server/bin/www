@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+console.log('got the port', process.env.PORT);
+
+const app = require('../');
+const port = process.env.PORT;
+
+app.listen(port, console.log(`application running at ${port}`));

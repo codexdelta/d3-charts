@@ -6,8 +6,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, 'server/static'),
+    filename: 'adChart.js'
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -35,9 +35,9 @@ module.exports = {
     }]
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Wolf',
-      template: './src/root.ejs'
-    })
+  //   new HtmlWebpackPlugin({
+  //     title: 'Wolf',
+  //     template: './src/root.ejs'
+  //   })
   ]
 }
